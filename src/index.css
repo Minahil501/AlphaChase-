@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+  .text-shadow {
+    text-shadow: 2px 2px 6px rgba(255, 165, 0, 0.8); /* soft orange glow */
+  }
+  .text-shadow-lg {
+    text-shadow: 0 0 15px rgba(255, 200, 0, 0.9); /* big glow */
+  }
+}
