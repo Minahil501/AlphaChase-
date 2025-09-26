@@ -3,12 +3,12 @@ function LandingPage(){
     return(
         <div className="bg-black h-screen w-full">         
         <div className="flex flex-col justify-center items-center text-center h-full text-orange-100 ">
-          <h1 className="text-6xl font-bungee mb-2 transition-all duration-500 sm:text-7xl md:text-8xl">
+          <h1 className="text-4xl font-bungee mb-2 transition-all duration-500 sm:text-6xl md:text-7xl lg:8xl">
                  Alpha
                <span className="inline-block animate-bounce text-yellow-600">C</span>
                  hase
              </h1>
-               <h2 className="text-2xl italic mb-4">you're chasing the right alphabet</h2>
+               <h2 className=" text-lg sm:text-2xl italic mb-4">you're chasing the right alphabet</h2>
             
                  <div className="flex justify-center gap-2">
           <Link
