@@ -148,7 +148,7 @@ const handleChoice = (c) => {
 
   return (
     <div
-      className="h-full w-screen transition-colors duration-300"
+      className="min-h-screen w-screen transition-colors duration-300 bg-[`${bg.body}]"
       style={{ backgroundColor: bg.body }}
     >
       {/* Header */}
