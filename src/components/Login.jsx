@@ -37,12 +37,12 @@ function Login() {
   // ✅ Success screen
   if (isLoggedIn === 1) {
     return (
-      <div className="bg-black h-screen flex flex-col justify-center items-center">
+      <div className="bg-black w-screen h-screen flex flex-col justify-center items-center">
         <div className="text-center">
-          <h1 className="text-9xl text-yellow-600 font-bold">
+          <h1 className="text-4xl sm:text-7xl md:text-8xl lg:text-9xl text-yellow-600 font-bold">
             Login Successful!
           </h1>
-          <p className="text-orange-100 my-6 text-7xl">
+          <p className="text-orange-100 my-6 text-2xl sm:text-5xl md:text-6xl lg:text-7xl">
             Welcome {data.firstName} {data.lastName}
           </p>
             <Link to="/Game" 
