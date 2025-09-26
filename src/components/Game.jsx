@@ -153,7 +153,7 @@ const handleChoice = (c) => {
     >
       {/* Header */}
       <div className="w-full flex items-center justify-between px-10 py-5">
-        <h1 className="text-xl sm:text-3xl font-bungee text-orange-100">
+        <h1 className="text-2xl sm:text-3xl font-bungee text-orange-100">
           Alpha
           <span className="inline-block animate-bounce text-yellow-600">C</span>
           hase
@@ -161,14 +161,14 @@ const handleChoice = (c) => {
         <div className="flex gap-2">
           <MdOutlineDarkMode
             style={{ color: bg.rest }}
-            className="text-xl sm:text-3xl cursor-pointer"
+            className="text-2xl sm:text-3xl cursor-pointer"
             onClick={toggle}
           />
           <Link to="/Dashboard">
-            <VscGraph style={{ color: bg.rest }} className="text-xl sm:text-3xl cursor-pointer" />
+            <VscGraph style={{ color: bg.rest }} className="text-2xl sm:text-3xl cursor-pointer" />
           </Link>
           <Link to="/">
-            <HiOutlineHome style={{ color: bg.rest }} className="text-xl sm:text-3xl cursor-pointer" />
+            <HiOutlineHome style={{ color: bg.rest }} className="text-2xl sm:text-3xl cursor-pointer" />
           </Link>
         </div>
       </div>
