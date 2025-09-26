@@ -148,34 +148,34 @@ const handleChoice = (c) => {
 
   return (
     <div
-      className="h-screen w-full transition-colors duration-300"
+      className="h-screen w-screen transition-colors duration-300"
       style={{ backgroundColor: bg.body }}
     >
       {/* Header */}
       <div className="w-full flex items-center justify-between px-10 py-5">
-        <h1 className="text-3xl font-bungee text-orange-100">
+        <h1 className="text-xl sm:text-3xl font-bungee text-orange-100">
           Alpha
           <span className="inline-block animate-bounce text-yellow-600">C</span>
           hase
         </h1>
-        <div className="flex gap-6">
+        <div className="flex gap-2">
           <MdOutlineDarkMode
             style={{ color: bg.rest }}
-            className="text-2xl cursor-pointer"
+            className="text-xl sm:text-3xl cursor-pointer"
             onClick={toggle}
           />
           <Link to="/Dashboard">
-            <VscGraph style={{ color: bg.rest }} className="text-2xl cursor-pointer" />
+            <VscGraph style={{ color: bg.rest }} className="text-xl sm:text-3xl cursor-pointer" />
           </Link>
           <Link to="/">
-            <HiOutlineHome style={{ color: bg.rest }} className="text-2xl cursor-pointer" />
+            <HiOutlineHome style={{ color: bg.rest }} className="text-xl sm:text-3xl cursor-pointer" />
           </Link>
         </div>
       </div>
 
       {/* Game Section */}
       <div className="flex flex-col h-full text-orange-100">
-        <p className="text-4xl italic px-10 text-center">
+        <p className="text-2xl sm:text-4xl italic px-10 text-center">
           Guess the word letter by letter
         </p>
 
@@ -187,12 +187,12 @@ const handleChoice = (c) => {
   </p>
 
   {/* Buttons */}
-  <div className="flex gap-4 flex-wrap justify-center">
+  <div className="flex gap-3 flex-wrap justify-center">
     {categories.map((c) => (
       <button
         key={c}
         onClick={() => handleChoice(c)}
-        className={`px-6 py-3 rounded-full font-bold transition duration-300 shadow-md ${
+        className={`px-3 py-2 sm:px-4 sm:py-2 md:px-6 md:py-3 rounded-full font-semibold transition duration-300 shadow-md ${
           choice === c
             ? "bg-yellow-600 text-white border-2 border-orange-100 scale-105 shadow-lg"
             : "border-2 border-orange-100 text-yellow-600 hover:bg-yellow-600 hover:text-orange-100 hover:scale-105"
