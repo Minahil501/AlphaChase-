@@ -148,7 +148,7 @@ const handleChoice = (c) => {
 
   return (
     <div
-      className="h-screen w-screen transition-colors duration-300"
+      className="h-full w-screen transition-colors duration-300"
       style={{ backgroundColor: bg.body }}
     >
       {/* Header */}
@@ -211,10 +211,10 @@ const handleChoice = (c) => {
               You selected:{" "}
               <span className="font-bold text-yellow-600">{choice}</span>
             </p>
-            <p className="mt-4 text-2xl italic font-bold text-[#E37EDF] animate-pulse ">
+            <p className="mt-4  text-xl sm:text-2xl italic font-bold text-[#E37EDF] animate-pulse ">
       💡 Hint: {hint}
     </p>
-            <p className="mt-10 text-7xl tracking-widest">{hiddenWord}</p>
+            <p className="mt-10  text-5xl sm:text-7xl tracking-normal">{hiddenWord}</p>
 
             {/* Letter Input Buttons */}
             {!gameOver && (
@@ -242,10 +242,10 @@ const handleChoice = (c) => {
 
             {/* Wrong guesses */}
             <div className=" my-8 flex flex-row justify-around">
-            <p className="text-3xl text-yellow-600">
+            <p className=" text-xl sm:text-3xl text-yellow-600">
               Wrong guesses: {wrongGuesses.join(", ")} ({attempts}/3)
             </p>
-             <p className=" text-3xl text-yellow-600">
+             <p className=" text-xl sm:text-3xl text-yellow-600">
               ⏱ Time: {timeTaken}s
             </p>
             </div>
@@ -254,11 +254,11 @@ const handleChoice = (c) => {
             {gameOver && (
               <div className="mt-6">
                 {attempts >= 3 ? (
-                  <p className="text-5xl text-red-500">
+                  <p className="text-2xl sm:text-5xl text-red-500">
                     ❌ Failed! Word was: {word}
                   </p>
                 ) : (
-                  <p className="text-5xl text-green-500">
+                  <p className="text-2xl sm:text-5xl text-green-500">
                     🎉 You guessed it in {timeTaken}s!
                   </p>
                 )}
@@ -272,7 +272,7 @@ const handleChoice = (c) => {
 
 <Link
   to="/Dashboard"
-  className="w-52 py-2 text-xl font-bold bg-yellow-600 text-orange-100 rounded-full hover:shadow-md hover:shadow-amber-100 text-center"
+  className="w-52 py-2 mb-56 text-xl font-bold bg-yellow-600 text-orange-100 rounded-full hover:shadow-md hover:shadow-amber-100 text-center"
 >
   Achievements
 </Link>
