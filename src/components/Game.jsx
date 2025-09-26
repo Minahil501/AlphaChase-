@@ -58,10 +58,10 @@ const words = {
   ],
   TV_SHOWS: [
     { word: "FRIENDS", hint: "A sitcom about 6 buddies in New York" },
-    { word: "STRANGER THINGS", hint: "Kids face supernatural forces" },
-    { word: "PEAKY BLINDERS", hint: "British gang drama series" },
-    { word: "SHERLOCK HOLMES", hint: "Detective show with Benedict Cumberbatch" },
-    { word: "SQUID GAME", hint: "Deadly survival game from Korea" },
+    { word: "STRANGERTHINGS", hint: "Kids face supernatural forces" },
+    { word: "PEAKYBLINDERS", hint: "British gang drama series" },
+    { word: "SHERLOCKHOLMES", hint: "Detective show with Benedict Cumberbatch" },
+    { word: "SQUIDGAME", hint: "Deadly survival game from Korea" },
   ],
 };
 
