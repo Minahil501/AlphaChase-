@@ -141,7 +141,7 @@ const bars = [
 
     <Link
       to="/Game"
-      className="w-56 sm:w-96 text-center mb-56 py-3 sm:py-4 text-xl sm:text-2xl bg-yellow-600 text-orange-100 rounded-full hover:shadow-md hover:shadow-amber-100 hover:scale-105 transition"
+      className="w-56 sm:w-96 text-center mb-60 py-3 sm:py-4 text-xl sm:text-2xl bg-yellow-600 text-orange-100 rounded-full hover:shadow-md hover:shadow-amber-100 hover:scale-105 transition"
     >
       Continue playing
     </Link>
