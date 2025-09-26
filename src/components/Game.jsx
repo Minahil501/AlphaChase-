@@ -152,7 +152,7 @@ const handleChoice = (c) => {
       style={{ backgroundColor: bg.body }}
     >
       {/* Header */}
-      <div className="w-full flex items-center justify-between px-10 py-5">
+      <div className="w-full flex items-center justify-between px-8 py-5">
         <h1 className="text-2xl sm:text-3xl font-bungee text-orange-100">
           Alpha
           <span className="inline-block animate-bounce text-yellow-600">C</span>
